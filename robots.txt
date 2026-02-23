@@ -1,0 +1,17 @@
+# robots.txt pour Restaurant La Balançoire
+# https://www.votre-domaine.com/robots.txt
+
+User-agent: *
+# Autorise tous les robots à visiter le site
+
+Allow: /
+# Autorise l'accès à tout le site par défaut
+
+Disallow: /politique.html
+# Interdit l'indexation de la page politique de confidentialité
+
+Disallow: /mentions.html
+# Interdit également l'indexation de la page mentions légales (optionnel, recommandé pour concentrer le SEO sur les pages commerciales)
+
+Sitemap: https://www.votre-domaine.com/sitemap.xml
+# Indique l'adresse du plan du site (si vous en créez un plus tard)

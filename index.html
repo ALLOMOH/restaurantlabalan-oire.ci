@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+
+     <!-- SEO Principal -->
+    <title>Restaurant La Balançoire | Gastronomie Ivoirienne à Cocody, Abidjan</title>
+    <meta name="description" content="Découvrez le Restaurant La Balançoire à Cocody, Abidjan. Une cuisine gastronomique raffinée mêlant tradition ivoirienne et modernité. Réservez votre table en ligne.">
+    <meta name="keywords" content="Restaurant Abidjan, La Balançoire, Restaurant Cocody, Gastronomie Ivoirienne, Restaurant ivoirien, Meilleur restaurant Abidjan, Cuisine locale, Réservation restaurant">
+    <meta name="author" content="La Balançoire">
+    <meta name="robots" content="index, follow"> <!-- Autorise l'indexation -->
+    <link rel="canonical" href="https://www.votre-domaine.com/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://www.votre-domaine.com/">
+    <meta property="og:title" content="Restaurant La Balançoire | Gastronomie à Abidjan">
+    <meta property="og:description" content="Vivez une expérience culinaire unique au cœur de Cocody. Cuisine raffinée, cadre élégant. Réservez maintenant.">
+    <meta property="og:image" content="https://www.votre-domaine.com/images/og-image.jpg"> <!-- Mettez une image de couverture (ex: 1200x630px) -->
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Restaurant La Balançoire - Abidjan">
+    <meta name="twitter:description" content="Gastronomie ivoirienne raffinée à Cocody. Réservez votre table.">
+    <meta name="twitter:image" content="https://www.votre-domaine.com/images/og-image.jpg">
+
+    <!-- SEO Local (Géolocalisation pour Google Maps/Search) -->
+    <meta name="geo.region" content="CI-AB">
+    <meta name="geo.placename" content="Abidjan">
+    <meta name="geo.position" content="5.2981191;-3.9675769">
+    <meta name="ICBM" content="5.2981191, -3.9675769">
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Balançoire | Restaurant Gastronomique - Abidjan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="/tailwind.config.js"></script>
+  </head>
+  <body class="bg-neutral-950 text-white font-sans antialiased">
+    <div class="main-wrapper">
+      <!-- Navigation -->
+      <nav
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center"
+        id="navbar"
+      >
+        <div class="w-full max-w-7xl px-6 lg:px-12">
+          <div class="flex items-center justify-between h-20 lg:h-24">
+            <a href="#" class="relative z-10">
+              <span
+                class="font-serif text-2xl lg:text-3xl tracking-wide text-gradient"
+                >La Balançoire</span
+              >
+            </a>
+
+            <div class="hidden lg:flex items-center gap-12">
+              <a
+                href="#accueil"
+                class="relative text-sm tracking-widest uppercase text-neutral-300 hover:text-gold-400 transition-colors line-animation"
+                >Accueil</a
+              >
+              <a
+                href="#histoire"
+                class="relative text-sm tracking-widest uppercase text-neutral-300 hover:text-gold-400 transition-colors line-animation"
+                >Notre Histoire</a
+              >
+              <a
+                href="#menu"
+                class="relative text-sm tracking-widest uppercase text-neutral-300 hover:text-gold-400 transition-colors line-animation"
+                >La Carte</a
+              >
+              <a
+                href="#galerie"
+                class="relative text-sm tracking-widest uppercase text-neutral-300 hover:text-gold-400 transition-colors line-animation"
+                >Galerie</a
+              >
+              <a
+                href="#contact"
+                class="relative text-sm tracking-widest uppercase text-neutral-300 hover:text-gold-400 transition-colors line-animation"
+                >Contact</a
+              >
+            </div>
+
+            <a
+              href="#contact"
+              class="hidden lg:flex items-center gap-2 px-6 py-3 border border-gold-500/50 text-gold-400 text-sm tracking-widest uppercase hover:bg-gold-500/10 transition-all duration-300"
+            >
+              <iconify-icon
+                icon="mdi:silverware-fork-knife"
+                width="16"
+              ></iconify-icon>
+              Réserver
+            </a>
+
+            <button
+              class="lg:hidden relative z-10 w-10 h-10 flex flex-col items-center justify-center gap-1.5"
+              id="menuBtn"
+            >
+              <span
+                class="w-6 h-px bg-white transition-all duration-300"
+              ></span>
+              <span
+                class="w-6 h-px bg-white transition-all duration-300"
+              ></span>
+              <span
+                class="w-4 h-px bg-white transition-all duration-300 self-end"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        class="lg:hidden fixed inset-0 bg-neutral-950/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-opacity duration-500 z-40"
+        id="mobileMenu"
+      >
+        <a
+          href="#accueil"
+          class="font-serif text-3xl text-white hover:text-gold-400 transition-colors"
+          >Accueil</a
+        >
+        <a
+          href="#histoire"
+          class="font-serif text-3xl text-white hover:text-gold-400 transition-colors"
+          >Notre Histoire</a
+        >
+        <a
+          href="#menu"
+          class="font-serif text-3xl text-white hover:text-gold-400 transition-colors"
+          >La Carte</a
+        >
+        <a
+          href="#galerie"
+          class="font-serif text-3xl text-white hover:text-gold-400 transition-colors"
+          >Galerie</a
+        >
+        <a
+          href="#contact"
+          class="font-serif text-3xl text-white hover:text-gold-400 transition-colors"
+          >Contact</a
+        >
+      </div>
+
+      <!-- Hero Section -->
+      <section
+        id="accueil"
+        class="relative h-screen flex items-center justify-center overflow-hidden"
+      >
+        <div class="absolute inset-0">
+          <img
+            src="https://picsum.photos/seed/restaurant-elegant/1920/1080"
+            alt="Restaurant ambiance"
+            class="w-full h-full object-cover parallax-bg"
+          />
+          <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div
+          class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent"
+        ></div>
+
+        <div class="relative flex items-center flex-col z-10 text-center px-6 max-w-5xl mx-auto">
+          <p
+            class="text-gold-400 text-sm tracking-[0.3em] uppercase mb-6 fade-up"
+          >
+            Restaurant Gastronomique • Abidjan
+          </p>
+          <h1
+            class="font-serif text-6xl md:text-8xl lg:text-9xl font-light leading-none mb-8 fade-up delay-100"
+          >
+            <span class="text-gradient">La Balançoire</span>
+          </h1>
+          <p
+            class="text-neutral-300 text-lg md:text-xl font-light max-w-2xl mx-auto mb-12 fade-up delay-200"
+          >
+            Une expérience culinaire unique au cœur de Cocody, où tradition
+            ivoirienne et gastronomie contemporaine se rencontrent.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-up delay-300"
+          >
+            <a
+              href="#menu"
+              class="group flex items-center gap-3 px-8 py-4 bg-gold-500 text-neutral-900 font-medium tracking-widest uppercase text-sm hover:bg-gold-400 transition-colors"
+            >
+              Découvrir la Carte
+              <iconify-icon
+                icon="mdi:arrow-right"
+                class="group-hover:translate-x-1 transition-transform"
+              ></iconify-icon>
+            </a>
+            <a
+              href="#contact"
+              class="px-8 py-4 border border-white/20 text-white tracking-widest uppercase text-sm hover:bg-white/5 transition-colors"
+            >
+              Réserver une Table
+            </a>
+          </div>
+        </div>
+
+        <div class="absolute  bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 fade-up delay-500">
+
+          <span class="text-xs tracking-widest uppercase text-neutral-500">Découvrir</span>
+          <div class="w-px h-16 bg-gradient-to-b from-gold-500/50 to-transparent"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="histoire" class="py-24 lg:py-32 bg-neutral-950 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+            <div class="relative flex justify-center">
+              <div
+                class="aspect-[4/5] overflow-hidden gold-glow max-w-md w-full"
+              >
+                <img
+                  src="https://picsum.photos/seed/chef-cooking/800/1000"
+                  alt="Notre Chef"
+                  class="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700"
+                />
+              </div>
+              <div
+                class="absolute -bottom-6 -right-6 w-48 h-48 border border-gold-500/30"
+              ></div>
+              <div
+                class="absolute -top-6 -left-6 w-32 h-32 bg-gold-500/5"
+              ></div>
+            </div>
+
+            <div class="lg:pl-8">
+              <span class="text-gold-400 text-sm tracking-[0.2em] uppercase"
+                >Notre Histoire</span
+              >
+              <h2
+                class="font-serif text-4xl md:text-5xl lg:text-6xl font-light mt-4 mb-8 leading-tight"
+              >
+                Une passion pour <br /><span class="text-gold-400"
+                  >l'excellence culinaire</span
+                >
+              </h2>
+              <div
+                class="space-y-6 text-neutral-400 font-light leading-relaxed"
+              >
+                <p>
+                  Né d'une passion pour les saveurs authentiques de la Côte
+                  d'Ivoire,
+                  <strong class="text-white">La Balançoire</strong> s'est imposé
+                  comme une adresse incontournable à Abidjan.
+                </p>
+                <p>
+                  Notre chef sublime les produits locaux avec une créativité
+                  sans pareille. Chaque plat raconte une histoire, celle de
+                  notre terroir riche.
+                </p>
+              </div>
+
+              <div
+                class="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-white/10"
+              >
+                <div class="text-center">
+                  <span class="font-serif text-4xl lg:text-5xl text-gold-400"
+                    >12+</span
+                  >
+                  <p class="text-sm text-neutral-500 mt-2">Années</p>
+                </div>
+                <div class="text-center">
+                  <span class="font-serif text-4xl lg:text-5xl text-gold-400"
+                    >50+</span
+                  >
+                  <p class="text-sm text-neutral-500 mt-2">Plats</p>
+                </div>
+                <div class="text-center">
+                  <span class="font-serif text-4xl lg:text-5xl text-gold-400"
+                    >4.8</span
+                  >
+                  <p class="text-sm text-neutral-500 mt-2">Note</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Menu Section -->
+      <section
+        id="menu"
+        class="py-24 lg:py-32 bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 relative"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative">
+          <div class="text-center mb-16 lg:mb-24">
+            <span class="text-gold-400 text-sm tracking-[0.2em] uppercase"
+              >Nos Créations</span
+            >
+            <h2
+              class="font-serif text-4xl md:text-5xl lg:text-6xl font-light mt-4 mb-6"
+            >
+              La Carte
+            </h2>
+            <p class="text-neutral-400 font-light max-w-2xl mx-auto">
+              Cliquez sur les catégories pour découvrir nos spécialités.
+            </p>
+          </div>
+
+          <!-- Menu Categories Tabs -->
+          <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button
+              class="menu-tab active px-6 py-2 text-sm tracking-widest uppercase border border-gold-500 text-gold-400 bg-gold-500/10 transition-all"
+              data-category="entrees"
+            >
+              Entrées
+            </button>
+            <button
+              class="menu-tab px-6 py-2 text-sm tracking-widest uppercase border border-white/20 text-neutral-400 hover:border-gold-500/50 hover:text-gold-400 transition-all"
+              data-category="plats"
+            >
+              Plats
+            </button>
+            <button
+              class="menu-tab px-6 py-2 text-sm tracking-widest uppercase border border-white/20 text-neutral-400 hover:border-gold-500/50 hover:text-gold-400 transition-all"
+              data-category="desserts"
+            >
+              Desserts
+            </button>
+            <button
+              class="menu-tab px-6 py-2 text-sm tracking-widest uppercase border border-white/20 text-neutral-400 hover:border-gold-500/50 hover:text-gold-400 transition-all"
+              data-category="boissons"
+            >
+              Boissons
+            </button>
+          </div>
+
+          <!-- Dynamic Menu Items Grid -->
+          <div
+            class="menu-grid-container grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto"
+            id="menuGrid"
+          >
+            <!-- ENTRÉES -->
+            <div
+              class="menu-item menu-item-card pb-6 group"
+              data-type="entrees"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="font-serif text-xl lg:text-2xl text-white group-hover:text-gold-400 transition-colors"
+                >
+                  Attieké Grillé au Poulet
+                </h3>
+                <span class="font-serif text-xl text-gold-400"
+                  >8.500 F CFA</span
+                >
+              </div>
+              <p class="text-neutral-500 font-light">
+                Attieké maison, poulet fermier grillé, légumes croquants, sauce
+                gingembre-citron
+              </p>
+            </div>
+
+            <div
+              class="menu-item menu-item-card pb-6 group"
+              data-type="entrees"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="font-serif text-xl lg:text-2xl text-white group-hover:text-gold-400 transition-colors"
+                >
+                  Salade Ivoirienne Revisitée
+                </h3>
+                <span class="font-serif text-xl text-gold-400"
+                  >6.500 F CFA</span
+                >
+              </div>
+              <p class="text-neutral-500 font-light">
+                Avocat, tomates anciennes, sardines fumées, vinaigrette au
+                kpakpo
+              </p>
+            </div>
+
+            <div
+              class="menu-item menu-item-card pb-6 group"
+              data-type="entrees"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="font-serif text-xl lg:text-2xl text-white group-hover:text-gold-400 transition-colors"
+                >
+                  Brochettes de Crevettes
+                </h3>
+                <span class="font-serif text-xl text-gold-400"
+                  >12.000 F CFA</span
+                >
+              </div>
+              <p class="text-neutral-500 font-light">
+                Crevettes sauvages, marinade épicée, sauce cocktail maison
+              </p>
+            </div>
+
+            <!-- PLATS -->
+            <div
+              class="menu-item menu-item-card pb-6 group hidden-item"
+              data-type="plats"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="font-serif text-xl lg:text-2xl text-white group-hover:text-gold-400 transition-colors"
+                >
+                  Garba Gourmet
+                </h3>
+                <span class="font-serif text-xl text-gold-400"
+                  >9.500 F CFA</span
+                >
+              </div>
+              <p class="text-neutral-500 font-light">
+                Thon frais poêlé, attieké fine, légumes sautés, sauce piment
+                doux
+              </p>
+            </div>
+
+            <div
+              class="menu-item menu-item-card pb-6 group hidden-item"
+              data-type="plats"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="font-serif text-xl lg:text-2xl text-white group-hover:text-gold-400 transition-colors"
+                >
+                  Poisson Braisé Signature
+                </h3>
+                <span class="font-serif text-xl text-gold-400"
+                  >15.000 F CFA</span
+                >
+              </div>
+              <p class="text-neutral-500 font-light">
+                Carpe rouge braisée, alloco, riz jollof, sauce graine
+              </p>
+            </div>
+
+            <div
+              class="menu-item menu-item-card pb-6 group hidden-item"
+              data-type="plats"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="font-serif text-xl lg:text-2xl text-white group-hover:text-gold-400 transition-colors"
+                >
+                  Filet de Bœuf au Poivre
+                </h3>
+                <span class="font-serif text-xl text-gold-400"
+                  >18.000 F CFA</span
+                >
+              </div>
+              <p class="text-neutral-500 font-light">
+                Filet mignon, sauce poivre vert, purée de manioc, haricots verts
+              </p>
+            </div>
+
+            <!-- DESSERTS -->
+            <div
+              class="menu-item menu-item-card pb-6 group hidden-item"
+              data-type="desserts"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="font-serif text-xl lg:text-2xl text-white group-hover:text-gold-400 transition-colors"
+                >
+                  Moelleux au Chocolat
+                </h3>
+                <span class="font-serif text-xl text-gold-400"
+                  >4.500 F CFA</span
+                >
+              </div>
+              <p class="text-neutral-500 font-light">
+                Cœur coulant, glace vanille bourbon, tuile dentelle
+              </p>
+            </div>
+
+            <div
+              class="menu-item menu-item-card pb-6 group hidden-item"
+              data-type="desserts"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="font-serif text-xl lg:text-2xl text-white group-hover:text-gold-400 transition-colors"
+                >
+                  Assiette de Fruits Tropicaux
+                </h3>
+                <span class="font-serif text-xl text-gold-400"
+                  >3.500 F CFA</span
+                >
+              </div>
+              <p class="text-neutral-500 font-light">
+                Mangue, papaye, ananas, sorbet coco, sirop de gingembre
+              </p>
+            </div>
+
+            <!-- BOISSONS -->
+            <div
+              class="menu-item menu-item-card pb-6 group hidden-item"
+              data-type="boissons"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="font-serif text-xl lg:text-2xl text-white group-hover:text-gold-400 transition-colors"
+                >
+                  Cocktail "Cocody Sunset"
+                </h3>
+                <span class="font-serif text-xl text-gold-400"
+                  >3.000 F CFA</span
+                >
+              </div>
+              <p class="text-neutral-500 font-light">
+                Rhum, jus de mangue, grenadine, citron vert
+              </p>
+            </div>
+
+            <div
+              class="menu-item menu-item-card pb-6 group hidden-item"
+              data-type="boissons"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3
+                  class="font-serif text-xl lg:text-2xl text-white group-hover:text-gold-400 transition-colors"
+                >
+                  Bissam Épicé
+                </h3>
+                <span class="font-serif text-xl text-gold-400"
+                  >1.500 F CFA</span
+                >
+              </div>
+              <p class="text-neutral-500 font-light">
+                Jus de bissam frais, gingembre, cannelle, clou de girofle
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="galerie" class="py-24 lg:py-32 bg-neutral-950">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="text-center mb-16">
+            <span class="text-gold-400 text-sm tracking-[0.2em] uppercase"
+              >Découvrez</span
+            >
+            <h2
+              class="font-serif text-4xl md:text-5xl lg:text-6xl font-light mt-4 mb-6"
+            >
+              Notre Univers
+            </h2>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            <div class="col-span-2 row-span-2">
+              <div class="relative h-full overflow-hidden group">
+                <img
+                  src="https://picsum.photos/seed/restaurant-interior/800/800"
+                  alt="Intérieur"
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
+            </div>
+            <div class="overflow-hidden group aspect-square">
+              <img
+                src="https://picsum.photos/seed/dish-plating/400/400"
+                alt="Dressage"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+            </div>
+            <div class="overflow-hidden group aspect-square">
+              <img
+                src="https://picsum.photos/seed/wine-glass/400/400"
+                alt="Vin"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+            </div>
+            <div class="overflow-hidden group aspect-square">
+              <img
+                src="https://picsum.photos/seed/chef-plate/400/400"
+                alt="Chef"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+            </div>
+            <div class="overflow-hidden group aspect-square">
+              <img
+                src="https://picsum.photos/seed/seafood-dish/400/400"
+                alt="Fruits de mer"
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section with WhatsApp -->
+      <section id="contact" class="py-24 lg:py-32 bg-neutral-950">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 max-w-6xl mx-auto">
+            <div>
+              <span class="text-gold-400 text-sm tracking-[0.2em] uppercase"
+                >Contact</span
+              >
+              <h2 class="font-serif text-4xl md:text-5xl font-light mt-4 mb-8">
+                Réservez votre table
+              </h2>
+              <p class="text-neutral-400 font-light leading-relaxed mb-12">
+                Remissez le formulaire ci-contre pour réserver directement via
+                WhatsApp. Vous pouvez aussi nous appeler.
+              </p>
+
+              <div class="space-y-8">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 border border-gold-500/30 flex items-center justify-center flex-shrink-0"
+                  >
+                    <iconify-icon
+                      icon="mdi:whatsapp"
+                      class="text-gold-400"
+                      width="22"
+                    ></iconify-icon>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-medium mb-1">WhatsApp</h3>
+                    <a
+                      href="https://wa.me/2250700000000"
+                      class="text-neutral-400 hover:text-gold-400 transition-colors font-light"
+                      >+225 07 00 00 00 00</a
+                    >
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 border border-gold-500/30 flex items-center justify-center flex-shrink-0"
+                  >
+                    <iconify-icon
+                      icon="mdi:map-marker"
+                      class="text-gold-400"
+                      width="20"
+                    ></iconify-icon>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-medium mb-1">Adresse</h3>
+                    <p class="text-neutral-400 font-light">
+                      Cocody, Abidjan, Côte d'Ivoire
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 border border-gold-500/30 flex items-center justify-center flex-shrink-0"
+                  >
+                    <iconify-icon
+                      icon="mdi:clock-outline"
+                      class="text-gold-400"
+                      width="20"
+                    ></iconify-icon>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-medium mb-1">Horaires</h3>
+                    <p class="text-neutral-400 font-light">
+                      Lun - Ven: 12h - 15h / 19h - 23h<br />
+                      Sam - Dim: 12h - 23h
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reservation Form -->
+            <div class="bg-neutral-900 p-8 lg:p-12 border border-white/5">
+              <h3 class="font-serif text-2xl mb-8">Réservation rapide</h3>
+              <form id="reservationForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="text-sm text-neutral-400 block mb-2"
+                      >Nom complet</label
+                    >
+                    <input
+                      type="text"
+                      id="resName"
+                      required
+                      class="w-full bg-transparent border border-white/10 px-4 py-3 text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                      placeholder="Votre nom"
+                    />
+                  </div>
+                  <div>
+                    <label class="text-sm text-neutral-400 block mb-2"
+                      >Téléphone</label
+                    >
+                    <input
+                      type="tel"
+                      id="resPhone"
+                      required
+                      class="w-full bg-transparent border border-white/10 px-4 py-3 text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                      placeholder="+225 XX XX XX XX"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="text-sm text-neutral-400 block mb-2"
+                      >Date</label
+                    >
+                    <input
+                      type="date"
+                      id="resDate"
+                      required
+                      class="w-full bg-transparent border border-white/10 px-4 py-3 text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label class="text-sm text-neutral-400 block mb-2"
+                      >Heure</label
+                    >
+                    <select
+                      id="resTime"
+                      required
+                      class="w-full bg-neutral-900 border border-white/10 px-4 py-3 text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                    >
+                      <option value="">Sélectionner</option>
+                      <option value="12:00">12h00</option>
+                      <option value="12:30">12h30</option>
+                      <option value="13:00">13h00</option>
+                      <option value="19:00">19h00</option>
+                      <option value="19:30">19h30</option>
+                      <option value="20:00">20h00</option>
+                      <option value="20:30">20h30</option>
+                      <option value="21:00">21h00</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="text-sm text-neutral-400 block mb-2"
+                    >Nombre de personnes</label
+                  >
+                  <select
+                    id="resGuests"
+                    required
+                    class="w-full bg-neutral-900 border border-white/10 px-4 py-3 text-white focus:border-gold-500/50 focus:outline-none transition-colors"
+                  >
+                    <option value="1">1 personne</option>
+                    <option value="2" selected>2 personnes</option>
+                    <option value="3">3 personnes</option>
+                    <option value="4">4 personnes</option>
+                    <option value="5">5 personnes</option>
+                    <option value="6+">6+ personnes</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="text-sm text-neutral-400 block mb-2"
+                    >Message (optionnel)</label
+                  >
+                  <textarea
+                    id="resMessage"
+                    rows="2"
+                    class="w-full bg-transparent border border-white/10 px-4 py-3 text-white focus:border-gold-500/50 focus:outline-none transition-colors resize-none"
+                    placeholder="Allergies, occasion spéciale..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full py-4 bg-green-600 text-white font-medium tracking-widest uppercase text-sm hover:bg-green-700 transition-colors flex items-center justify-center gap-3"
+                >
+                  <iconify-icon icon="mdi:whatsapp" width="20"></iconify-icon>
+                  Envoyer via WhatsApp
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div
+            class="mt-16 h-80 lg:h-96 overflow-hidden border border-white/5 max-w-6xl mx-auto"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.7587!2d-3.9675769!3d5.2981191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1edf0326f9dc1%3A0x2716ec2117952d05!2sRestaurant%20La%20Balan%C3%A7oire!5e0!3m2!1sfr!2sci!4v1699999999999!5m2!1sfr!2sci"
+              width="100%"
+              height="100%"
+              style="border: 0; filter: grayscale(0.8) contrast(1.1)"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer with Legal Links -->
+      <footer class="bg-neutral-900 py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+          <span class="font-serif text-3xl text-gradient">La Balançoire</span>
+          <p class="text-neutral-500 font-light mt-4 mb-6">
+            Restaurant Gastronomique - Abidjan
+          </p>
+          <div class="flex gap-4 justify-center mb-8">
+            <a
+              href="https://wa.me/2250700000000"
+              class="w-10 h-10 border border-white/10 flex items-center justify-center text-neutral-400 hover:text-gold-400 hover:border-gold-500/30 transition-colors"
+            >
+              <iconify-icon icon="mdi:whatsapp" width="18"></iconify-icon>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 border border-white/10 flex items-center justify-center text-neutral-400 hover:text-gold-400 hover:border-gold-500/30 transition-colors"
+            >
+              <iconify-icon icon="mdi:instagram" width="18"></iconify-icon>
+            </a>
+          </div>
+
+          <!-- Legal Links Row -->
+          <div
+            class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8"
+          >
+            <p class="text-neutral-600 text-sm">
+              © 2024 La Balançoire. Tous droits réservés.
+            </p>
+            <div class="flex gap-6 text-sm">
+              <a
+                href="politique.html"
+                class="text-neutral-500 hover:text-gold-400 transition-colors"
+                >Politique de confidentialité</a
+              >
+              <span class="text-neutral-700">|</span>
+              <a
+                href="mentions.html"
+                class="text-neutral-500 hover:text-gold-400 transition-colors"
+                >Mentions légales</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/app//scripts/scripts.js"></script>
+  </body>
+</html>
